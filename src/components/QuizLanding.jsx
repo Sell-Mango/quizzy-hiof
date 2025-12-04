@@ -1,26 +1,32 @@
 import React from 'react';
+import BackButton from "./BackButton.jsx";
 
-const QuizLanding = ({ quizzes, onSelectQuiz }) => {
+const QuizLanding = ({ quizzes, theme, onSelect }) => {
 
-  console.log(quizzes)
+    const filteredQuiz = theme === "alle" ? quizzes : quizzes.filter(quiz => quiz.theme.includes(theme))
+
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Quiz Monitor
+            Tema: {theme.charAt(0).toUpperCase() + theme.slice(1)}
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Velg en quiz for å teste dine kunnskaper. Foreleseren vil nevne hvilken quiz som skal brukes.
+            Velg en quiz for å teste dine kunnskaper.
           </p>
         </div>
 
+          <div className="items-center w-full mb-8">
+              <BackButton label="tema" reset="selectedTheme" onSelect={onSelect} />
+          </div>
+
         <div className="grid md:grid-cols-2 gap-6">
-          {quizzes.map((quiz) => (
+          { filteredQuiz.length > 0 ? filteredQuiz.map((quiz) => (
             <div
               key={quiz.id}
               className="bg-white rounded-xl shadow-sm border border-gray-200 p-8 hover:shadow-md transition-shadow cursor-pointer"
-              onClick={() => onSelectQuiz(quiz)}
+              onClick={() => onSelect("selectQuiz", quiz)}
             >
               <div className="flex items-start justify-between mb-4">
                 <div className="flex-1">
@@ -45,7 +51,7 @@ const QuizLanding = ({ quizzes, onSelectQuiz }) => {
                 </button>
               </div>
             </div>
-          ))}
+          )) : <h2>Ingen quizzer:(</h2>}
         </div>
       </div>
     </div>

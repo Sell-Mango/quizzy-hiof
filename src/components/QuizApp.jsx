@@ -15,7 +15,7 @@ const QuizApp = ({ quiz, onBackToLanding }) => {
   useEffect(() => {
     const shuffledMap = {};
     quiz.questions.forEach((question, questionIndex) => {
-      console.log(question.options.map(m => console.log(m)))
+      console.log(question.options.map(m => console.log("TEST ", m)))
       const shuffledOptions = question.options
         .map((text, originalIndex) => ({ text, originalIndex }))
         .sort(() => Math.random() - 0.5);
