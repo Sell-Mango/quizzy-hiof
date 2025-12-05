@@ -3,3 +3,4 @@ export * from "./ulearn_2_js_intro_quiz";
 export * from "./ulearn_3_ts_intro_quiz";
 export * from "./ulearn_4_react_native_intro_quiz.js";
 export * from "./ulearn_5_environment_quiz.js";
+export * from "./ulearn_6_components_quiz.js";
