@@ -172,8 +172,8 @@ const questions = [
 ];
 
 export const ulearn_2_moderneJavascript = {
-    id: "quiz-modern-javascript",
-    title: "Moderne JavaScript for React & React Native",
+    id: "quiz-modern-javascript-kml",
+    title: "Moderne JavaScript for React & React Native - KML",
     description:
         "En quiz som tester moderne JavaScript-konsepter som er viktige for React og mobilutvikling med React Native: variabler, destructuring, spread, array-metoder, moduler og asynkron kode.",
     theme: ["javascript", "react-native", "async"],

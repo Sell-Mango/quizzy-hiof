@@ -53,6 +53,7 @@ const questions = [
         "Svar alternativ 3",
         "Svar alternativ 4"
     ],
+      code: ``, // Optional
     correct: 1,
     explanation:
       "Forklaring på riktig svar."
@@ -63,6 +64,7 @@ const questions = [
     question: "Spørsmål eller påstand",
     options: ["Sant", "Usant"],
     correct: 1,
+      code: ``, // optional
     explanation:
         "Forklaring på riktig svar."
   },
