@@ -10,3 +10,5 @@ export * from "./ulearn_9_lists_quiz.js";
 export * from "./ulearn_10_interactions_quiz.js";
 export * from "./ulearn_11_navigation_quiz.js";
 export * from "./ulearn_12_stack_nav_quiz.js";
+export * from "./ulearn_13_route_groups_slots_quiz.js";
+export * from "./ulearn_14_tabs_quiz.js";
