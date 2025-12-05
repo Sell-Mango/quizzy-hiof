@@ -8,3 +8,5 @@ export * from "./ulearn_7_styling_quiz.js";
 export * from "./ulearn_8_props_quiz.js";
 export * from "./ulearn_9_lists_quiz.js";
 export * from "./ulearn_10_interactions_quiz.js";
+export * from "./ulearn_11_navigation_quiz.js";
+export * from "./ulearn_12_stack_nav_quiz.js";
