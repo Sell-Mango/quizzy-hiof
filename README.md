@@ -8,7 +8,7 @@ Lag og del fagrelaterte quizzer for hjelp til å pugge til eksamen.
 
 ---
 
-1. Åpne en ny terminal i roten av prosjektet (/quizzy-hiof) og skriv følgende kommando:
+1. Åpne ny terminal i roten av prosjektet (/quizzy-hiof) og skriv følgende kommando:
 ```
 npm install
 ```
