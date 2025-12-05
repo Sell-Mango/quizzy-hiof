@@ -10,6 +10,16 @@ export const mobilprogThemes = [
         description: "N/A",
     },
     {
+        name: "JavaScript",
+        value: "javascript",
+        description: "N/A",
+    },
+    {
+        name: "React Native",
+        value: "react-native",
+        description: "N/A",
+    },
+    {
         name: "Expo",
         value: "expo",
         description: "N/A",
