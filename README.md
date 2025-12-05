@@ -1,5 +1,7 @@
 # Quizzy V2
 
+Publisert side: [quizzy-hiof-v2](https://sell-mango.github.io/quizzy-hiof/)
+
 Lag og del fagrelaterte quizzer for hjelp til å pugge til eksamen.
 
 ## Installasjon
