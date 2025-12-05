@@ -5,3 +5,4 @@ export * from "./ulearn_4_react_native_intro_quiz.js";
 export * from "./ulearn_5_environment_quiz.js";
 export * from "./ulearn_6_components_quiz.js";
 export * from "./ulearn_7_styling_quiz.js";
+export * from "./ulearn_8_props_quiz.js";
