@@ -274,7 +274,7 @@ const questions = [
 
 export const quiz_javascript_basics_bzj = {
     id: "javascript-basics-bzj",
-    title: "JavaScript – grunnleggende konsept­er - BZJ",
+    title: "L2 - JavaScript – grunnleggende konsept­er - BZJ",
     description:
         "Quiz om grunnleggende JavaScript-konsepter for React Native: variabler, typer, funksjoner, destructuring, spread, moduler, array- og objekt-metoder samt asynkron JavaScript med promises og async/await.",
     theme: ["javascript", "mobilprogrammering"],

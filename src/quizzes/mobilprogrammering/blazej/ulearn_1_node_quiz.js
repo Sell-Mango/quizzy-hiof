@@ -239,7 +239,7 @@ const questions = [
 
 export const quiz_node_okosystem = {
     id: "node-okosystem",
-    title: "Node-økosystem for mobilutvikling - BZJ",
+    title: "L1 - Node-økosystem for mobilutvikling - BZJ",
     description:
         "Quiz om Node.js, LTS, package.json, avhengigheter, semantisk versjonering, NPM/PNPM og node_modules i kontekst av React Native-utvikling.",
     theme: ["node", "mobilprogrammering"],
