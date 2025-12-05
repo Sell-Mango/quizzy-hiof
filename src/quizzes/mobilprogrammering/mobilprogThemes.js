@@ -5,8 +5,13 @@ export const mobilprogThemes = [
         description: "Test description",
     },
     {
-        name: "Test",
-        value: "test",
-        description: "Test description",
+        name: "Node",
+        value: "node",
+        description: "N/A",
     },
+    {
+        name: "Expo",
+        value: "expo",
+        description: "N/A",
+    }
 ]
