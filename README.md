@@ -1,5 +1,7 @@
 # Quizzy V2
 
+Publisert side: [quizzy-hiof-v2](https://sell-mango.github.io/quizzy-hiof/)
+
 Lag og del fagrelaterte quizzer for hjelp til å pugge til eksamen.
 
 ## Installasjon
@@ -8,7 +10,7 @@ Lag og del fagrelaterte quizzer for hjelp til å pugge til eksamen.
 
 ---
 
-1. Åpne en ny terminal i roten av prosjektet (/quizzy-hiof) og skriv følgende kommando:
+1. Åpne ny terminal i roten av prosjektet (/quizzy-hiof) og skriv følgende kommando:
 ```
 npm install
 ```
@@ -51,6 +53,7 @@ const questions = [
         "Svar alternativ 3",
         "Svar alternativ 4"
     ],
+      code: ``, // Optional
     correct: 1,
     explanation:
       "Forklaring på riktig svar."
@@ -61,6 +64,7 @@ const questions = [
     question: "Spørsmål eller påstand",
     options: ["Sant", "Usant"],
     correct: 1,
+      code: ``, // optional
     explanation:
         "Forklaring på riktig svar."
   },
