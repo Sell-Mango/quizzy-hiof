@@ -33,5 +33,25 @@ export const mobilprogThemes = [
       name: "debugging",
       value: "debugging",
       description: "N/A",
+    },
+    {
+        name: "states",
+        value: "states",
+        description: "N/A",
+    },
+    {
+        name: "interaction",
+        value: "interaction",
+        description: "N/A",
+    },
+    {
+        name: "lists",
+        value: "lists",
+        description: "N/A",
+    },
+    {
+        name: "navigation",
+        value: "navigation",
+        description: "N/A",
     }
 ]
