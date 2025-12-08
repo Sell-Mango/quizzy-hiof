@@ -161,7 +161,8 @@ export const quiz_route_groups_slot_bzj = {
         "expo-router",
         "route-groups",
         "slot",
-        "navigasjon",
+        "expo",
+        "navigation",
     ],
     questions,
 };

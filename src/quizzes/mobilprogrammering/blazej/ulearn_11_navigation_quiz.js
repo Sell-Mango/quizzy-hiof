@@ -226,6 +226,6 @@ export const quiz_navigasjon_bzj = {
     title: "L11 - Navigasjon og Expo Router i React Native - BZJ",
     description:
         "Quiz om navigasjon i React Native med Expo Router: filbasert routing, app-mappe, index-filer, dynamiske ruter som [id].tsx, Link vs useRouter, useLocalSearchParams og bruk av felles constants som Theme og Students.",
-    theme: ["react-native", "expo-router", "navigasjon", "mobilprogrammering"],
+    theme: ["react-native", "expo", "navigation", "mobilprogrammering"],
     questions: [...questions],
 };

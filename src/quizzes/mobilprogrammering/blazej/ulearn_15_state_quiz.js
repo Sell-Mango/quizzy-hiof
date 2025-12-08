@@ -156,6 +156,6 @@ export const quiz_state_concept = {
     title: "L15 - Konseptforståelse av state - BZJ",
     description:
         "Quiz som tester forståelse av state, bruk av hooks og forskjellen mellom props og state.",
-    theme: ["React state", "useState", "State håndtering"],
+    theme: ["React state", "useState", "State håndtering", "states"],
     questions: [...questions],
 };

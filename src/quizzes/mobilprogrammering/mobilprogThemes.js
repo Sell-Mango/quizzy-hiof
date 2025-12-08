@@ -63,5 +63,10 @@ export const mobilprogThemes = [
         name: "hooks",
         value: "hooks",
         description: "N/A",
+    },
+    {
+        name: "komponenter og props",
+        value: "komponenter_props",
+        description: "N/A",
     }
 ]
