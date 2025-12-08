@@ -342,6 +342,6 @@ export const ulearn_7_stilsetting_rn_kml = {
     title: "Styling i React Native – KML",
     description:
         "En avansert stil-quiz med fokus på layout, flexbox, posisjonering, plattformspesifikke stiler, dynamiske stiler og feilidentifisering.",
-    theme: ["styling", "react-native", "debugging"],
+    theme: ["styling", "debugging"],
     questions: [...questions]
 };

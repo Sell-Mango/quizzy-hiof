@@ -281,6 +281,6 @@ export const ulearn_3_introTypescript_rn_kml = {
     title: "TypeScript for React Native – KML",
     description:
         "En quiz som tester TypeScript-begreper relevante for React Native: interfaces, types, generics, utility types, async/await, type guards m.m.",
-    theme: ["typescript", "react-native", "async"],
+    theme: ["typescript", "async"],
     questions: [...questions]
 };

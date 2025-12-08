@@ -135,6 +135,6 @@ export const ulearn_1_node_okosystem = {
     title: "Node økosystem – KML",
     description:
         "En quiz som tester forståelse av Node.js, package management, scripts og versjonshåndtering i kontekst av mobilutvikling med React Native og Expo.",
-    theme: ["node", "react-native"],
+    theme: ["node"],
     questions: [...questions]
 };
