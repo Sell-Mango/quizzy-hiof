@@ -246,6 +246,6 @@ export const quiz_props_bzj = {
     title: "L8 - React Native – props, children og theming - BZJ",
     description:
         "Quiz om props i React Native: dataflyt fra foreldre til barn, destrukturering, defaultverdier, children, stil via props, prop spreading, forskjellen på props og state, typed props, theming og liste-rendering.",
-    theme: ["react-native", "props", "mobilprogrammering"],
+    theme: ["react-native", "komponenter_props", "mobilprogrammering"],
     questions: [...questions],
 };
