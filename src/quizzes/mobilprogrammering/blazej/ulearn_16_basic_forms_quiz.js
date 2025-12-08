@@ -206,12 +206,6 @@ export const react_native_forms_quiz = {
     title: "L16- React Native Forms og skjemahåndtering - BZJ",
     description:
         "Quiz om forms i React Native, ulike input-komponenter, skjemahåndtering med state, TanStack Form og validering med Zod. Tilpasset som repetisjon mot eksamen i mobilprogrammering.",
-    theme: [
-        "React Native",
-        "Forms",
-        "TanStack Form",
-        "Zod",
-        "Mobilprogrammering",
-    ],
+    theme: ["react-native", "forms", "zod"],
     questions: [...questions],
 };

@@ -276,12 +276,6 @@ export const drawer_quiz = {
     title: "L23 – Drawer, Context og bildevalg - BZJ",
     description:
         "Quiz som tester konsepter rundt Context, delt state, Drawer-bruk, bildeopplasting og robust formhåndtering.",
-    theme: [
-        "React Context",
-        "Form state",
-        "Drawer-navigasjon",
-        "Bilde- og filhåndtering",
-        "Validering og Result-mønster",
-    ],
+    theme: ["react-native", "forms", "navigations", "debugging", "validering"],
     questions: [...questions],
 };

@@ -111,6 +111,6 @@ export const react_native_modals_quiz = {
     title: "L18 - React Native Modals og sletting - BZJ",
     description:
         "Kort quiz om modaler i React Native, state-styring av synlighet, bekreftelsesdialoger for sletting og modaler via Expo Router.",
-    theme: ["React Native", "Modals", "Expo Router", "State", "UX"],
+    theme: ["react-native", "modaler", "expo", "komponenter_props"],
     questions: [...questions],
 };

@@ -223,13 +223,6 @@ export const react_context_quiz = {
     title: "L20 - React Context, reducer og tilstandshåndtering - BZJ",
     description:
         "Quiz med fokus på prinsipper: Context API, reducer-mønster, navigasjonsguards, React 19-forbedringer og strukturering av større applikasjoner.",
-    theme: [
-        "React Context",
-        "Tilstandshåndtering",
-        "Reducer",
-        "React 19",
-        "Arkitektur",
-        "Navigasjon",
-    ],
+    theme: ["react-native", "states", "arkitektur", "navigation"],
     questions: [...questions],
 };

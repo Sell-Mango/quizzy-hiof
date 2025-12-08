@@ -206,13 +206,6 @@ export const react_native_forms_advanced_quiz = {
     title: "L17 - React Native Forms – avansert skjemahåndtering - BZJ",
     description:
         "Quiz om videreføring av forms i React Native: komponentbasert skjemadesign, TanStack Form-bruk, Zod-validering, DateTimePicker, Picker og god brukeropplevelse. Laget som repetisjon mot eksamen i mobilprogrammering.",
-    theme: [
-        "React Native",
-        "Forms",
-        "TanStack Form",
-        "Zod",
-        "Skjemavalidering",
-        "Komponentdesign",
-    ],
+    theme: ["react-native", "forms", "zod", "validering", "komponenter_props"],
     questions: [...questions],
 };

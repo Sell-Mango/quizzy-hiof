@@ -427,15 +427,6 @@ export const auth_quiz = {
     title: "L21 Autentisering, guards, deep linking og Appwrite – prinsippquiz - BZJ",
     description:
         "Fokus på prinsipper: klient vs server auth, Context + AuthProvider, guards, deep linking, development builds, Appwrite-service-lag, Result<T>-mønster og rollebasert tilgang.",
-    theme: [
-        "Auth",
-        "Context",
-        "Guards",
-        "Mobil vs web",
-        "Deep linking",
-        "Development build",
-        "Appwrite",
-        "Feilhåndtering",
-    ],
+    theme: ["auth", "react-native", "appwrite", "debugging"],
     questions,
 };

@@ -221,13 +221,11 @@ export const react_native_camera_quiz = {
     description:
         "Quiz om prinsippene rundt kamera, permissions, AsyncStorage, custom hooks og komponenter for bildehåndtering i en mobilapp. Fokus på forståelse, ikke kode.",
     theme: [
-        "React Native",
-        "Kamera",
-        "Permissions",
-        "AsyncStorage",
-        "Forms",
-        "UX",
-        "Komponentdesign",
+        "react-native",
+        "kamera",
+        "rettigheter",
+        "forms",
+        "komponenter_props",
     ],
     questions: [...questions],
 };

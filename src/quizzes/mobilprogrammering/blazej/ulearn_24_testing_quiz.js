@@ -248,6 +248,6 @@ export const testing_quiz = {
     title: "L24 – Testing, Jest, MSW og teststrategi - BZJ",
     description:
         "Quiz som tester konsepter rundt testtyper, mocks/stubs/fakes, AAA-mønster, async testing, MSW og god testpraksis.",
-    theme: ["Testing", "Jest", "React Testing Library", "MSW", "Teststrategi"],
+    theme: ["testing", "debugging"],
     questions: [...questions],
 };

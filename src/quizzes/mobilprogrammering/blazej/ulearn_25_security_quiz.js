@@ -247,6 +247,6 @@ export const security_owasp_quiz = {
     title: "L25 - Sikkerhet, OWASP og mobilapplikasjoner - BZJ",
     description:
         "Quiz om grunnleggende sikkerhetsprinsipper, CIA-modellen, klient vs. server, lagring, nøkler, nettverk, deep links og tilgangskontroll.",
-    theme: ["Sikkerhet", "OWASP", "Mobil", "React Native"],
+    theme: ["security", "react-native"],
     questions: [...questions],
 };
