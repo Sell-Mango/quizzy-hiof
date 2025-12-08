@@ -1,1 +1,2 @@
-export * from './kjellmagne';
+export * from "./kjellmagne";
+export * from "./blazej";
