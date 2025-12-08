@@ -89,6 +89,7 @@ export const mobilprogThemes = [
         value: "api",
         description: "N/A",
     },
+    {
         name: "Styling",
         value: "styling",
         description: "N/A",
