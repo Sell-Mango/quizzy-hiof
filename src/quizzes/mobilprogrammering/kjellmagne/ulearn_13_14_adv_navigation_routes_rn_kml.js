@@ -3,259 +3,235 @@ const questions = [
         id: "q1",
         type: "multiple-choice",
         question:
-            "Hva er hovedfordelen med route groups i Expo Router?",
+            "Hva er hovedhensikten med en route group i Expo Router?",
         options: [
-            "De endrer URL-strukturen",
-            "De grupperer filer uten at mappenavnet blir del av URL-en",
-            "De fungerer kun for autentiseringsmoduler",
-            "De gjør navigasjonen tregere"
+            "Å gjøre URL-er lengre og mer detaljerte",
+            "Å gruppere skjermer i mapper uten at mappenavn påvirker URL-strukturen",
+            "Å aktivere automatisk autentisering",
+            "Å lage dynamiske ruter"
         ],
         correct: 1,
         explanation:
-            "Route groups (f.eks. (admin)) organiserer filer uten å påvirke URL-strukturen. :contentReference[oaicite:2]{index=2}"
+            "Route groups gjør det mulig å organisere appen uten at strukturen reflekteres i URL-en."
     },
 
     {
         id: "q2",
         type: "multiple-choice",
         question:
-            "Hva skjer om man lager en route group (admin)/ uten en egen _layout.tsx?",
+            "Hva kjennetegner <Slot /> i et layout?",
         options: [
-            "Gruppen fungerer helt fint",
-            "Appen krasjer",
-            "Skjermene rendres uten Stack eller Slot og overskriver innholdet, ofte fører det til 'blanke' sider",
-            "URL-er blir ugyldige"
+            "Den lager en egen navigasjonsstack",
+            "Den rendrer nested skjermer inni layout-komponenten",
+            "Den fungerer bare i kombinasjon med Tabs",
+            "Den brukes kun i dynamiske ruter"
         ],
-        correct: 2,
+        correct: 1,
         explanation:
-            "Uten en layout vet ikke Expo Router hvordan gruppens skjermhierarki skal rendres, ofte vises kun første komponent. :contentReference[oaicite:3]{index=3}"
+            "Slot er et 'placeholder' som viser innholdet til barnruter."
     },
 
     {
         id: "q3",
         type: "multiple-choice",
         question:
-            "Hva gjør <Slot /> når den brukes i et layout?",
+            "Når bør du bruke en Stack i en route groups _layout.tsx?",
         options: [
-            "Rendrer all navigasjon på nytt",
-            "Bestemmer at innholdet ikke skal vises før man manuelt laster det",
-            "Sender nestede ruter videre og rendrer dem inne i layouten",
-            "Fjerner headeren automatisk"
+            "Når gruppen trenger egen header og navigasjonslogikk",
+            "Når du vil skjule alle ruter",
+            "Når du ikke har planer om å vise nested ruter",
+            "Når du kun skal rendrer UI uten navigasjon"
         ],
-        correct: 2,
+        correct: 0,
         explanation:
-            "Slot fungerer som et 'placeholder' for nested routes, og rendrer underliggende sider. :contentReference[oaicite:4]{index=4}"
+            "En Stack gir kontroll over header, gestures, back behavior og skjermflyt."
     },
 
     {
         id: "q4",
-        type: "multiple-choice",
+        type: "true-false",
         question:
-            "Hva er forskjellen mellom en Stack-layout og en Slot-layout i en route group?",
-        options: [
-            "Slot gir ingen header og ingen stack-logikk, mens Stack gir navigasjonsbar og back-støtte",
-            "Slot støtter kun iOS",
-            "Stack må plasseres i rotmappen",
-            "Slot fungerer kun for dynamiske ruter"
-        ],
-        correct: 0,
+            "Påstand: Tabs kan fungere alene uten en layout-fil rundt.",
+        options: ["Sant", "Usant"],
+        correct: 1,
         explanation:
-            "Slot rendrer kun innhold — ingen navigasjonsbar. Stack gir full stack-navigasjon. :contentReference[oaicite:5]{index=5}"
+            "Tabs må være definert i en _layout.tsx for å strukturere de underliggende filene som egne faner."
     },
 
     {
         id: "q5",
         type: "multiple-choice",
         question:
-            "Hvorfor vil dette føre til merkelig oppførsel?",
+            "Hva er en vanlig grunn til å splitte navigasjon i flere nivåer (f.eks. nested stacks eller nested tabs)?",
         options: [
-            "Tabs må ligge under en Stack",
-            "Tabs kan ikke kombineres med Slot",
-            "Layouten mangler Slot, så nested filer i gruppen rendres ikke",
-            "Tabs krever egne _layout.tsx-filer i rotmappen"
+            "Å redusere antall filer",
+            "Å gi ulike deler av appen forskjellig navigasjonsopplevelse",
+            "Å unngå bruk av dynamiske ruter",
+            "Å forhindre global state"
         ],
-        code: `// app/(admin)/_layout.tsx
-export default function AdminLayout() {
-  return (
-    <View>
-      <Text>Admin Layout</Text>
-    </View>
-  );
-}`,
-        correct: 2,
+        correct: 1,
         explanation:
-            "Uten <Slot /> vil demo.tsx, students.tsx osv. aldri rendres. Bare layout vises. :contentReference[oaicite:6]{index=6}"
+            "Nested navigasjon lar deg ha en opplevelse i én seksjon (f.eks. tab-basert) og en annen i en annen del av appen."
     },
 
     {
         id: "q6",
         type: "multiple-choice",
         question:
-            "Hva skjer om du legger Tabs direkte i app/_layout.tsx?",
+            "Hvorfor kan det være en fallgruve å legge Tabs i den øverste rotlayouten?",
         options: [
-            "Faner vises kun på students-sider",
-            "Hele appen får tabs i stedet for stack navigasjon",
-            "Det blir en feil fordi Tabs kun kan brukes inni grupper",
-            "Tabs fungerer kun sammen med Slot"
+            "Tabs støtter kun én skjerm",
+            "Tabs vil da vises over hele appen, også skjermbilder der du ikke ønsker dem",
+            "Det gjør navigasjonen tregere",
+            "Det fjerner muligheten for dynamiske ruter"
         ],
         correct: 1,
         explanation:
-            "Tabs i rotlayout gjør dem globale → alle skjermer får tabs, noe som som regel ikke er ønskelig. :contentReference[oaicite:7]{index=7}"
+            "Tabs i root betyr at alle skjermer får tab-navigasjon — sjelden ønskelig."
     },
 
     {
         id: "q7",
         type: "multiple-choice",
         question:
-            "Hvorfor brukes `(students)` og `(student)` som to separate route groups i pensum?",
+            "Hva er korrekt bruk av en route group når du vil lage en seksjon i appen som har eget navigasjonsoppsett?",
         options: [
-            "For å gjøre URL-en lengre",
-            "For å forhindre at tabs på studentlisten også vises på detaljsiden",
-            "For å redusere antall filer",
-            "For å slå sammen stack og tabs logikk"
+            "Opprette en mappe uten navn",
+            "Opprette en mappe med parenteser, f.eks. (dashboard)",
+            "Opprette en mappe med underscore, f.eks. _dashboard",
+            "Opprette en mappe som heter routes"
         ],
         correct: 1,
         explanation:
-            "Ulike navigasjonsoppsett krever separate grupper: studentliste har Tabs, studentdetaljer har egne Tabs + Stack nesting. :contentReference[oaicite:8]{index=8}"
+            "Parenteser forteller Expo Router at mappen er en gruppe, ikke et URL-segment."
     },
 
     {
         id: "q8",
         type: "multiple-choice",
         question:
-            "Hva er feil i denne Tabs-oppsettingen?",
+            "Hva skjer hvis en route group mangler en _layout.tsx fil?",
         options: [
-            "Tabs.Screen må ligge inni Stack",
-            "`name` må matche filnavn",
-            "initialParams kan ikke brukes i Tabs",
-            "tabBarIcon krever en tekststreng"
+            "Nested skjermer rendres helt fint uten layout",
+            "Bare første skjerm i gruppen rendres, resten ignoreres",
+            "Nested ruter rendres ikke fordi det ikke finnes et punkt å plassere dem",
+            "Expo Router lager en default layout automatisk"
         ],
-        code: `<Tabs>
-  <Tabs.Screen name="profilePage" />
-</Tabs>`,
-        correct: 1,
+        correct: 2,
         explanation:
-            "profilePage må matche filnavn nøyaktig (f.eks. profilePage.tsx). :contentReference[oaicite:9]{index=9}"
+            "Uten layout finnes ingen 'plass' å rendrer de underliggende skjermene."
     },
 
     {
         id: "q9",
         type: "multiple-choice",
         question:
-            "Hva er initialParams brukt til i Tabs i studentdetalj-layouten?",
+            "Hva er fordelen med å bruke Tabs i en egen route group (f.eks. (mainTabs))?",
         options: [
-            "Å gi default styling",
-            "Å laste lokale data",
-            "Å sikre at id sendes til alle faner i studentdetalj-visningen",
-            "Å forhindre navigasjon"
+            "Tabs får sin egen navigasjonskontekst og påvirker ikke resten av appen",
+            "Tabs kan ikke fungere i root uansett",
+            "Det gir bedre ytelse",
+            "Det gjør det mulig å bruke Tabs uten ikoner"
         ],
-        correct: 2,
+        correct: 0,
         explanation:
-            "Faner som 'index', 'edit', 'delete' mister id uten initialParams fordi Tabs ikke automatisk videresender parametere. :contentReference[oaicite:10]{index=10}"
+            "Tabs som egen gruppe hindrer dem i å blande seg med stack-level navigasjon andre steder i appen."
     },
 
     {
         id: "q10",
         type: "multiple-choice",
         question:
-            "Hva skjer når en Tab-skjerm gis `href: null`?",
+            "Hvorfor bør 'name' i <Tabs.Screen> stemme nøyaktig med filnavnet?",
         options: [
-            "Tabben blir skjult og kan ikke trykkes",
-            "Skjermen slettes",
-            "Href må være en string",
-            "Tabs slutter å fungere"
+            "Expo Router krever dette for å koble fanen til riktig fil",
+            "Det påvirker ytelsen",
+            "Det bestemmer header-stilen",
+            "Det er kun en konvensjon og spiller ingen rolle"
         ],
         correct: 0,
         explanation:
-            "`href: null` skjuler fanen helt, nyttig når en fane ikke skal være tilgjengelig direkte. :contentReference[oaicite:11]{index=11}"
+            "Tabs bruker filnavnet for routing — mismatch betyr at fanen ikke fungerer."
     },
 
     {
         id: "q11",
         type: "multiple-choice",
         question:
-            "Hva er feil i denne strukturen?",
+            "Hva er et vanlig navigasjonsproblem når man kombinerer Tabs og Stack nesting?",
         options: [
-            "`students`-mappen må ligge i rotmappen",
-            "_layout.tsx mangler Slot eller Stack",
-            "Filen [id].tsx må ligge i en egen route group",
-            "Nested group-navn må ikke inneholde parenteser"
+            "Stack overskriver all state i Tabs",
+            "Man får dobbelt header hvis man ikke setter headerShown korrekt",
+            "Tabs krasjer automatisk når man åpner flere stacks",
+            "Stack fungerer ikke med dynamiske ruter"
         ],
-        code: `
-app/
-├── (admin)/
-│   ├── (student)/
-│   │   └── students/
-│   │       ├── _layout.tsx
-│   │       └── [id].tsx
-`,
         correct: 1,
         explanation:
-            "Uten Slot/Stack i nested layout rendres ikke underliggende filer. :contentReference[oaicite:12]{index=12}"
+            "Manglende header-config kan gi overlappende eller doble headere."
     },
 
     {
         id: "q12",
         type: "multiple-choice",
         question:
-            "Hvorfor oppstår 'missing nested route context' feil i Expo Router?",
+            "Hva brukes dynamiske ruter som [id].tsx til?",
         options: [
-            "Man bruker Link feil",
-            "En nested folder har ikke sin egen _layout.tsx",
-            "Man har for mange Tabs",
-            "Routeren krever absolutte paths"
+            "Å generere tilfeldige skjermnavn",
+            "Å vise innhold basert på URL-parametere",
+            "Å lage globale variabler",
+            "Å generere listekomponenter automatisk"
         ],
         correct: 1,
         explanation:
-            "Hver mappenivå med ruter må ha en layout for å gi riktig kontekst. :contentReference[oaicite:13]{index=13}"
+            "Dynamiske ruter gjør det mulig å vise innhold basert på identifikatorer i pathen."
     },
 
     {
         id: "q13",
         type: "multiple-choice",
         question:
-            "Hva er fordelen med å bruke Slot i route groups som kun skal bytte innhold uten å endre stack-headeren?",
+            "Hva er en god grunn til å bruke nested stacks inni route groups?",
         options: [
-            "Slot gir automatisk tabs",
-            "Slot skjuler navigasjon uten ekstra konfigurasjon",
-            "Slot lar oss bytte skjermer uten å trigge ny stack-context",
-            "Slot overskriver global layout"
+            "Å lage flere globale headere",
+            "Å gi kontroll over navigasjonsrekkefølgen i et avgrenset område av appen",
+            "Å tvinge brukeren tilbake til root hver gang",
+            "Å deaktivere back-knappen"
         ],
-        correct: 2,
+        correct: 1,
         explanation:
-            "Slot bytter kun innhold; stack-nivået over forblir det samme. Perfekt når header ikke skal endres. :contentReference[oaicite:14]{index=14}"
+            "Nested stack gir separat navigasjonslogikk for en avgrenset seksjon."
     },
 
     {
         id: "q14",
         type: "multiple-choice",
         question:
-            "Hva er konsekvensen av å legge en Stack inni en Tabs-layout?",
+            "Hva skjer dersom en Tab-skjerm får `href: null`?",
         options: [
-            "Det er ikke mulig",
-            "Stack vil bruke sin egen header og kan kollidere med Tabs hvis headerShown ikke settes riktig",
-            "Tabs vil alltid overstyre Stack",
-            "Dynamiske ruter slutter å fungere"
+            "Fanen vises som disabled",
+            "Fanen fjernes helt fra tab-baren",
+            "Filen slettes automatisk",
+            "Fanen blir kun tilgjengelig via programmatisk navigasjon"
         ],
         correct: 1,
         explanation:
-            "Stack + Tabs er vanlig, men manglende konfig av headerShown fører ofte til doble headere. :contentReference[oaicite:15]{index=15}"
+            "href: null betyr at skjermen eksisterer, men ikke har en tab-knapp."
     },
 
     {
         id: "q15",
         type: "multiple-choice",
         question:
-            "Hvorfor navigeres det riktig fra studentlisten til `/students/[id]` i pensumets struktur?",
+            "Hva er den største fallgruven når man blander relative paths (f.eks. 'details') og absolutte paths ('/details') i navigasjon?",
         options: [
-            "Fordi [id] ligger i samme mappe som tabs-layouten",
-            "Fordi (student)-gruppen og students-mappen skaper en nested path som matcher URL-strukturen",
-            "Fordi Expo Router alltid finner dynamiske ruter automatisk",
-            "Fordi Link alltid bruker absolutte paths"
+            "Relative paths er raskere",
+            "Absolutte paths fungerer kun i Tabs",
+            "Relative paths navigerer basert på nåværende rute og kan føre til feil eller uventede mål",
+            "Absolutte paths støttes ikke i Expo Router"
         ],
-        correct: 1,
+        correct: 2,
         explanation:
-            "Grunnlaget for korrekt navigasjon er at (student) inneholder en nested students-mappe med egen layout. Dette gir riktig path-oppløsning. :contentReference[oaicite:16]{index=16}"
+            "Relativ navigasjon er kraftig, men kan gå til feil skjerm dersom man ikke kjenner rutehierarkiet godt."
     }
 ];
 

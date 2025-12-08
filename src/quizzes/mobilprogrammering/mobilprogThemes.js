@@ -53,5 +53,15 @@ export const mobilprogThemes = [
         name: "navigation",
         value: "navigation",
         description: "N/A",
+    },
+    {
+        name: "context",
+        value: "context",
+        description: "N/A",
+    },
+    {
+        name: "hooks",
+        value: "hooks",
+        description: "N/A",
     }
 ]
