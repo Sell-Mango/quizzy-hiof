@@ -298,7 +298,7 @@ const questions = [
 
 export const ulearn_8_props_komponenter_kml = {
     id: "ulearn_8_props_komponenter_kml",
-    title: "Props & komponenter i React Native – KML",
+    title: "L8 - Props & komponenter – KML",
     description:
         "En quiz som tester kunnskap om unidirectional data flow, props, children, callbacks, state lifting og praktisk komponentarkitektur i React Native.",
     theme: ["props", "states", "interaction"],

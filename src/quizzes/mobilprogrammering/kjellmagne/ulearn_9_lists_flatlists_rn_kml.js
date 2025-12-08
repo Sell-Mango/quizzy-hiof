@@ -198,7 +198,7 @@ const questions = [
 
 export const ulearn_9_lists_flatlists_kml = {
     id: "ulearn_9_lists_flatlists_kml",
-    title: "FlatList – Praktisk bruk, ytelse og fallgruver - KML",
+    title: "L9 - FlatList – Praktisk bruk - KML",
     description:
         "En quiz om praktisk bruk av FlatList, ytelsesoptimering, interaksjoner, fordeler, ulemper og vanlige feil i React Native.",
     theme: [

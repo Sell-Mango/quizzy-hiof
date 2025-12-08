@@ -339,7 +339,7 @@ const questions = [
 
 export const ulearn_7_stilsetting_rn_kml = {
     id: "ulearn_7_stilsetting_rn_kml",
-    title: "Styling i React Native – KML",
+    title: "L7 - Styling i React Native – KML",
     description:
         "En avansert stil-quiz med fokus på layout, flexbox, posisjonering, plattformspesifikke stiler, dynamiske stiler og feilidentifisering.",
     theme: ["styling", "debugging"],

@@ -204,7 +204,7 @@ export default function AuthedLayout() {
 
 export const ulearn_12_13_14_navigation_case_rn_kml = {
     id: "ulearn_12_13_14_navigation_case_rn_kml",
-    title: "Navigasjon i React Native – Case bruk av Stack, Tabs, Route Groups & Dynamiske ruter - KML",
+    title: "L12/13/14 - Navigasjon – Case bruk av Stack, Tabs, Route Groups - KML",
     description:
         "En case-basert quiz hvor du må velge den mest robuste og idiomatiske implementasjonen for navigasjon med Stack, Tabs, route groups og dynamiske ruter.",
     theme: [

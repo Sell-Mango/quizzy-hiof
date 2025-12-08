@@ -240,7 +240,7 @@ await AsyncStorage.setItem("lastImage", jsonValue);`,
 
 export const ulearn_20_21_camera_storage_kml = {
     id: "uelarn_20_21_camera_storage_kml",
-    title: "Expo Camera & Media Library – permissions, caching og refs - KML",
+    title: "L20/L21 - Expo Camera & Media Library – permissions, caching og refs - KML",
     description:
         "En case-basert quiz om praktisk bruk av Expo Camera og Media Library i React Native: permissions, AsyncStorage-caching, useRef, gjenbrukbare komponenter og bildevisning.",
     theme: [
