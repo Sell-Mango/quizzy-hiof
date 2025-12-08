@@ -226,6 +226,6 @@ export const quiz_interactions_bzj = {
     title: "L10 - Interaksjoner, Pressable og CustomPress - BZJ",
     description:
         "Quiz om brukerinteraksjoner i React Native: Pressable vs Button, onPress/onPressIn/onPressOut/onLongPress, pressed-tilstand, hitSlop, ripple-effekt, callback-props, CustomPress og samspillet mellom liste, kort og interaksjon.",
-    theme: ["react-native", "interactions", "pressable", "mobilprogrammering"],
+    theme: ["react-native", "interaction", "pressable", "mobilprogrammering"],
     questions: [...questions],
 };

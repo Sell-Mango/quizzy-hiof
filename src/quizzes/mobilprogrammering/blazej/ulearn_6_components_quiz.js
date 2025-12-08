@@ -236,6 +236,6 @@ export const quiz_komponenter_bzj = {
     title: "L6 - Komponenter og styling i React Native - BZJ",
     description:
         "Quiz om komponenter i React Native: View/Text/Image, forskjeller fra web, styling med StyleSheet, stil-arrays, fargekonstanter, betingede stiler, Dimensions og Flexbox-retning.",
-    theme: ["react-native", "komponenter", "mobilprogrammering"],
+    theme: ["react-native", "komponenter_props", "mobilprogrammering"],
     questions: [...questions],
 };

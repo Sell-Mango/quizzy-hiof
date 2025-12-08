@@ -228,9 +228,8 @@ export const quiz_stack_navigasjon_bzj = {
         "Quiz om Stack-navigasjon i React Native med Expo Router: `_layout.tsx`, Stack.Screen, globale og lokale screenOptions, dynamiske ruter, back-navigasjon og router-metoder som dismiss, dismissAll og dismissTo.",
     theme: [
         "react-native",
-        "expo-router",
-        "navigasjon",
-        "stack",
+        "expo",
+        "navigation",
         "mobilprogrammering",
     ],
     questions: [...questions],

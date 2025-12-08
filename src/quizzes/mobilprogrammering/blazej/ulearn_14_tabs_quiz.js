@@ -163,6 +163,6 @@ export const quiz_routes_and_tabs_concept = {
     title: "Konseptforståelse av navigasjon og Tabs",
     description:
         "Quiz som tester forståelse av ruteorganisering, Tabs og navigasjonsstruktur.",
-    theme: ["Navigasjon", "Tabs", "Route grupper"],
+    theme: ["navigation", "Tabs", "Route grupper", "expo"],
     questions: [...questions],
 };

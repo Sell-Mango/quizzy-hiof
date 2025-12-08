@@ -246,6 +246,6 @@ export const quiz_flatlist_bzj = {
     title: "L9 - FlatList, lister og ytelse i React Native - BZJ",
     description:
         "Quiz om FlatList i React Native: når den bør brukes, data/renderItem/keyExtractor, virtualisering, initialNumToRender, windowSize, pull-to-refresh, last-inn-mer og forskjeller fra ScrollView + map.",
-    theme: ["react-native", "flatlist", "lister", "mobilprogrammering"],
+    theme: ["react-native", "flatlist", "lists", "mobilprogrammering"],
     questions: [...questions],
 };
