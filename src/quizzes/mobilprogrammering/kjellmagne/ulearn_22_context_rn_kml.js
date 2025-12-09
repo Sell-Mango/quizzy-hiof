@@ -266,7 +266,7 @@ function Screen() {
 
 export const ulearn_22_context_rn_kml = {
     id: "ulearn_22_context_rn_kml",
-    title: "Context API – Casebasert bruk - KML",
+    title: "L22 - Context API – Casebasert bruk - KML",
     description:
         "En case- og kodebasert quiz om Context API, React 19-endringer, struktur, fordeler/ulemper og alternativer. Inkluderer vurdering av faktiske kodeeksempler.",
     theme: [

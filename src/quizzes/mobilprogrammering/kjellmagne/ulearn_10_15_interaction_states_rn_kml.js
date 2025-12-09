@@ -323,7 +323,7 @@ console.log(name);`,
 
 export const ulearn_10_15_interaction_states_kml = {
     id: "ulearn_10_15_interaction_states_kml",
-    title: "Interaksjon + State Management i React Native",
+    title: "L10/L15 - Interaksjon + State Management",
     description:
         "Tester forståelsen av state, interaksjoner, immutability, callbacks, Pressable, batching, funksjonell state og praktiske fallgruver.",
     theme: [

@@ -201,7 +201,7 @@ const questions = [
 
 export const ulearn_16_17_forms_praktisk_rn_kml = {
     id: "ulearn_16_17_forms_praktisk_rn_kml",
-    title: "Forms i React Native – bruk & implementasjon - KML",
+    title: "L16/L17 - Forms – bruk & implementasjon - KML",
     description:
         "En case-basert quiz hvor du får praktiske form-scenarier i React Native og må velge den mest robuste, skalerbare og idiomatiske implementasjonen.",
     theme: [

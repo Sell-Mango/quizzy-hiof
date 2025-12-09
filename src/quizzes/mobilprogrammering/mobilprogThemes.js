@@ -70,11 +70,6 @@ export const mobilprogThemes = [
         description: "N/A",
     },
     {
-        name: "debugging",
-        value: "debugging",
-        description: "N/A",
-    },
-    {
         name: "api",
         value: "api",
         description: "N/A",
@@ -132,6 +127,16 @@ export const mobilprogThemes = [
     {
         name: "komponenter og props",
         value: "komponenter_props",
+        description: "N/A",
+    },
+    {
+        name: "testing",
+        value: "testing",
+        description: "N/A",
+    },
+    {
+        name: "autentisering",
+        value: "autentisering",
         description: "N/A",
     }
 ]

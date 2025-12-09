@@ -238,7 +238,7 @@ const questions = [
 
 export const ulearn_16_17_forms_rn_kml = {
     id: "ulearn_16_17_forms_rn_kml",
-    title: "Forms i React Native – State, Validering og Struktur - KML",
+    title: "L16/L17 - Forms – State, Validering og Struktur - KML",
     description:
         "En generell quiz som tester teori og praktisk bruk av forms i React Native, inkludert state-håndtering, validering, refaktorering og god arkitektur.",
     theme: [

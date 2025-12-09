@@ -237,7 +237,7 @@ const questions = [
 
 export const ulearn_13_14_adv_navigation_routes_kml = {
     id: "ulearn_13_14_adv_navigation_routes_kml",
-    title: "Routing med Groups, Nested Stacks, Slot & Tabs - KML",
+    title: "L13/L14 - Routing med Groups, Nested Stacks, Slot & Tabs - KML",
     description:
         "En quiz som tester avansert navigasjon i Expo Router: route groups, Slot, nested stacks, tabs, initialParams og typiske fallgruver.",
     theme: [

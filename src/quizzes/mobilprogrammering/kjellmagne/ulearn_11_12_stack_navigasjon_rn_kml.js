@@ -248,7 +248,7 @@ app/
 
 export const ulearn_11_12_stack_navigasjon_rn_kml = {
     id: "ulearn_11_12_stack_navigasjon_rn_kml",
-    title: "Navigasjon med Stack Navigation - KML",
+    title: "L11/L12 - Navigasjon med Stack - KML",
     description:
         "En quiz om praktisk navigasjon i React Native med Expo Router: stack navigation, programmatisk navigasjon, deklarative lenker, dynamiske ruter og vanlige fallgruver.",
     theme: [
