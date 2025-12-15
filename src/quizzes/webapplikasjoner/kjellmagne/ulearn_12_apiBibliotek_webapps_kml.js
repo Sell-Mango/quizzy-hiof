@@ -177,7 +177,7 @@ const questions = [
 
 export const react_api_library_quiz = {
     id: "react-api-library",
-    title: "L12 - – API-bibliotek og organisering av datahenting - KML",
+    title: "L12 – API-bibliotek og organisering av datahenting - KML",
     description:
         "Quiz om sentralisert API-arkitektur, GET-operasjoner, refaktorering, AbortController, testing og skalerbarhet i React-applikasjoner.",
     theme: [

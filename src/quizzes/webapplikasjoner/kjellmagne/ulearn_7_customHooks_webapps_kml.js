@@ -224,7 +224,7 @@ const filteredQuestions = useMemo(() => {
 
 export const ulearn_7_customHooks_webapps_kml = {
     id: "ulearn_7_customHooks_webapps_kml",
-    title: "L7 - React – Refaktorering med custom hooks - KML",
+    title: "L7 – Refaktorering med custom hooks - KML",
     description:
         "Quiz om custom hooks, separasjon av ansvar, useMemo, TypeScript-typer for hooks, testing og gjenbrukbar arkitektur.",
     theme: [

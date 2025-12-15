@@ -153,7 +153,7 @@ const filteredQuestions = mockQuestions.filter(q =>
 
 export const ulearn_6_reactFundamentals_kml = {
     id: "ulearn_6_reactFundamentals_kml",
-    title: "L6 - React – QuestionTable søk & filtrering - KML",
+    title: "L6 - QuestionTable søk & filtrering - KML",
     description:
         "Quiz som tester forståelsen av React hooks, TypeScript interfaces, filtreringslogikk, event handling, arkitektur og 'Make it work, then make it better'-strategien.",
     theme: [

@@ -172,7 +172,7 @@ render(
 
 export const react_component_separation_advanced_quiz = {
     id: "react-component-separation-advanced",
-    title: "L8 - React – Avansert komponent-separasjon og modulær arkitektur - KML",
+    title: "L8 – Avansert komponent-separasjon og modulær arkitektur - KML",
     description:
         "En avansert quiz om arkitekturvalg, brytningspunkter, props-drilling, callback-patterns, dependency injection og testing i modulære React-applikasjoner.",
     theme: [

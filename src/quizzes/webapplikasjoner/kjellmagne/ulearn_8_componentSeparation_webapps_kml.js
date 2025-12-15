@@ -168,7 +168,7 @@ const questions = [
 
 export const ulearn_8_componentSeparation_webapps = {
     id: "ulearn_8_componentSeparation_webapps",
-    title: "L8 - React – Komponent-separasjon og modulær arkitektur - KML",
+    title: "L8 – Komponent-separasjon og modulær arkitektur - KML",
     description:
         "Quiz som tester forståelsen av SRP, komponent-komposisjon, props-kommunikasjon, callback-patterns, testbarhet og modulær arkitektur.",
     theme: [
