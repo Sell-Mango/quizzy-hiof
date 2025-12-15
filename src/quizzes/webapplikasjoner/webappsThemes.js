@@ -63,6 +63,41 @@ export const webappsThemes = [
         name: "Styling",
         value: "styling",
         description: "N/A",
+    },
+    {
+        name: "Server Actions",
+        value: "serverActions",
+        description: "N/A",
+    },
+    {
+        name: "Middleware",
+        value: "middleware",
+        description: "N/A",
+    },
+    {
+        name: "Layers",
+        value: "layers",
+        description: "N/A",
+    },
+    {
+        name: "DTO",
+        value: "dto",
+        description: "N/A",
+    },
+    {
+        name: "Forms",
+        value: "forms",
+        description: "N/A",
+    },
+    {
+        name: "Autentisering/Autorisering",
+        value: "autentisering",
+        description: "N/A",
+    },
+    {
+        name: "Drizzle",
+        value: "drizzle",
+        description: "N/A",
     }
 ]
 
